@@ -1,0 +1,116 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: white;
+    background-image: url('../images/playstation.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    background-color: #0c2536;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #276791;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* News Container */
+.news-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* News Grid */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* News Item Card */
+.news-item {
+    background-color: rgba(42, 42, 42, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* News Image */
+.news-item img {
+    width: 400px;
+    height: 200px;
+    object-fit: fit; /* Ensures the image fills the container without distortion */
+    border-radius: 10px; /* Optional: Rounds the edges */
+}
+
+.news-details {
+    padding: 15px;
+}
+
+.news-details h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.news-details h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.news-details h2 a:hover {
+    color: #00e5ff;
+    text-decoration: underline;
+}
+
+.news-details p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+

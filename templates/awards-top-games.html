@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone - Awards & Top Games</title>
+    <link rel="stylesheet" href="{% static 'css/awards-top-games.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'games_library' %}">Games Library</a></li>
+                <li><a href="{% url 'trending_games' %}">Trending Games</a></li>
+                <li><a href="{% url 'upcoming_releases' %}">Upcoming Releases</a></li>
+                <li><a href="{% url 'awards_top_games' %}">Awards & Top Games</a></li>
+                <li><a href="{% url 'gaming_news' %}">Gaming News</a></li>
+                <li><a href="{% url 'game_systems' %}">Game Systems</a></li>
+                <li><a href="{% url 'history_of_gaming' %}">History of Gaming</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="awards-container">
+        <h1>Awards & Top Games</h1>
+        <div class="award-grid">
+            <div class="game-item">
+                <img src="{% static 'images/game20.avif' %}" alt="Overwatch">
+                <h2>Overwatch (2016)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best Multiplayer, Best Game ESport, Best Ongoing, Best Game Direction</p>
+                <p>Overwatch was a 2016 team-based online multiplayer first-person shooter video game by Blizzard Entertainment</p>
+            </div>
+
+            <div class="game-item">
+                <img src="{% static 'images/game21.jpg' %}" alt="Zelda">
+                <h2>The Legend of Zelda: Breath of the Wild (2017)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best Game Direction, Best Action, Best Adventure, Most Anticipated Game</p>
+                <p>Set at the end of the Zelda timeline, the player controls an amnesiac Link as he sets out to save Princess Zelda and prevent Calamity Ganon from destroying the world.</p>
+            </div>
+
+            <div class="game-item">
+                <img src="{% static 'images/game1.png' %}" alt="God of War">
+                <h2>God of War (2018)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best Game Direction, Best Action/Adventure Game, Best Audio Design, Best Performance (Christopher Judge as Kratos), Best Narrative</p>
+                <p>God of War is known for its captivating storyline, exceptional combat mechanics, and top-notch performances.</p>
+            </div>
+
+            <div class="game-item">
+                <img src="{% static 'images/game8.png' %}" alt="Sekiro: Shadows Die Twice">
+                <h2>Sekiro: Shadows Die Twice (2019)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best Action/Adventure Game, Best Game Direction</p>
+                <p>Sekiro: Shadows Die Twice is praised for its challenging combat system and stunning visuals, making it one of the top games of 2019.</p>
+            </div>
+
+            <div class="game-item">
+                <img src="{% static 'images/game15.png' %}" alt="The Last of Us Part II">
+                <h2>The Last of Us Part II (2020)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best Game Direction, Best Narrative, Best Audio Design, Best Performance (Laura Bailey as Abby), Best Action/Adventure Game, Innovation in Accessibility</p>
+                <p>The Last of Us Part II is lauded for its emotional depth, stunning graphics, and exceptional character performances.</p>
+            </div>
+
+            <div class="game-item">
+                <img src="{% static 'images/game16.png' %}" alt="It Takes Two">
+                <h2>It Takes Two (2021)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best Family Game, Best Multiplayer Game</p>
+                <p>It Takes Two is a cooperative action-adventure game that redefined the genre with its innovative game mechanics and emotional storytelling.</p>
+            </div>
+
+            <div class="game-item">
+                <img src="{% static 'images/game6.png' %}" alt="Elden Ring">
+                <h2>Elden Ring (2022)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best Game Direction, Best Art Direction, Best Role-Playing Game</p>
+                <p>Elden Ring took the world by storm with its open-world design, intricate lore, and exceptional gameplay mechanics.</p>
+            </div>
+
+            <div class="game-item">
+                <img src="{% static 'images/game12.png' %}" alt="Baldur's Gate 3">
+                <h2>Baldur's Gate 3 (2023)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best RPG, Best Multiplayer, Best Community Support, Player's Voice, Best Performance (Neil Newbon as Astarion)</p>
+                <p>Baldur's Gate 3's' deep role-playing mechanics, engaging multiplayer, and strong community support solidified its position as a standout title in gaming.</p>
+            </div>
+
+            <div class="game-item">
+                <img src="{% static 'images/game19.jpg' %}" alt="Astro Bot">
+                <h2>Astro Bot (2023)</h2>
+                <p><strong>Awards:</strong> Game of the Year, Best Family Game, Best Game Direction, Best Action, Best Adventure</p>
+                <p>Astro Bot is a 2024 platform game developed by Team Asobi and published by Sony Interactive Entertainment for the PlayStation 5. It is a sequel to Astro's Playroom and the first game featuring the character to have been developed by Team Asobi since its separation from Japan Studio.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone - Gaming News</title>
+    <link rel="stylesheet" href="{% static 'css/gaming-news.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'games_library' %}">Games Library</a></li>
+                <li><a href="{% url 'trending_games' %}">Trending Games</a></li>
+                <li><a href="{% url 'upcoming_releases' %}">Upcoming Releases</a></li>
+                <li><a href="{% url 'awards_top_games' %}">Awards & Top Games</a></li>
+                <li><a href="{% url 'gaming_news' %}">Gaming News</a></li>
+                <li><a href="{% url 'game_systems' %}">Game Systems</a></li>
+                <li><a href="{% url 'history_of_gaming' %}">History of Gaming</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="news-container">
+        <h1>Gaming News</h1>
+
+        <div class="news-grid">
+            {% for article in articles %}
+            <div class="news-item">
+                {% if article.custom_image %}
+                    <img src="{% static article.custom_image %}" alt="{{ article.title }}">
+                {% elif article.urlToImage %}
+                    <img src="{{ article.urlToImage }}" alt="{{ article.title }}">
+                {% else %}
+                    <img src="{% static 'images/placeholder.avif' %}" alt="No Image Available">
+                {% endif %}
+                <div class="news-details">
+                    <h2><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></h2>
+                    <p>{{ article.description }}</p>
+                </div>
+            </div>
+            {% empty %}
+            <p>No gaming news available at the moment. Please check back later.</p>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>

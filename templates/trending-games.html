@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone - Trending Games</title>
+    <link rel="stylesheet" href="{% static 'css/trending-games.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'games_library' %}">Games Library</a></li>
+                <li><a href="{% url 'trending_games' %}">Trending Games</a></li>
+                <li><a href="{% url 'upcoming_releases' %}">Upcoming Releases</a></li>
+                <li><a href="{% url 'awards_top_games' %}">Awards & Top Games</a></li>
+                <li><a href="{% url 'gaming_news' %}">Gaming News</a></li>
+                <li><a href="{% url 'game_systems' %}">Game Systems</a></li>
+                <li><a href="{% url 'history_of_gaming' %}">History of Gaming</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="trending-container">
+        <h1>Trending Games</h1>
+        <div class="games-grid">
+            {% for game in games %}
+            <div class="game-card">
+                <img src="{{ game.background_image }}" alt="{{ game.name }}">
+                <div class="game-info">
+                    <h2>{{ game.name }} ({{ game.released }})</h2>
+                    <p>Rating: {{ game.rating }}</p>
+                    <p>
+                        <a href="https://www.metacritic.com/game/{{ game.slug }}" target="_blank">More Details</a>
+                    </p>
+                </div>
+            </div>
+            {% empty %}
+            <p>No trending games available at the moment. Please check back later.</p>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>

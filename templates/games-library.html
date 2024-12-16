@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone - Games Library</title>
+    <link rel="stylesheet" href="{% static 'css/games-library.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'games_library' %}">Games Library</a></li>
+                <li><a href="{% url 'trending_games' %}">Trending Games</a></li> 
+                <li><a href="{% url 'upcoming_releases' %}">Upcoming Releases</a></li>
+                <li><a href="{% url 'awards_top_games' %}">Awards & Top Games</a></li>
+                <li><a href="{% url 'gaming_news' %}">Gaming News</a></li>
+                <li><a href="{% url 'game_systems' %}">Game Systems</a></li> 
+                <li><a href="{% url 'history_of_gaming' %}">History of Gaming</a></li> 
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="games-container">
+        <h1>Games Library</h1>
+        <div class="games-grid">
+
+            <a href="https://www.playstation.com/en-us/god-of-war/" target="_blank" class="game">
+                <img src="{% static 'images/game1.png' %}" alt="Game 1">
+                <div class="game-details">
+                    <h2>God of War</h2>
+                    <p>2018</p>
+                </div>
+            </a>
+
+            <a href="https://www.supergiantgames.com/games/hades/" target="_blank" class="game">
+                <img src="{% static 'images/game2.png' %}" alt="Game 2">
+                <div class="game-details">
+                    <h2>Hades</h2>
+                    <p>2019</p>
+                </div>
+            </a>
+
+            <a href="https://store.steampowered.com/app/203140/Hitman_Absolution/" target="_blank" class="game">
+                <img src="{% static 'images/game3.png' %}" alt="Game 3">
+                <div class="game-details">
+                    <h2>Hitman Absolution</h2>
+                    <p>2012</p>
+                </div>
+            </a>
+
+            <a href="https://store.steampowered.com/app/2358720/Black_Myth_Wukong/" target="_blank" class="game">
+                <img src="{% static 'images/game4.png' %}" alt="Game 4">
+                <div class="game-details">
+                    <h2>Black Myth: Wukong</h2>
+                    <p>2024</p>
+                </div>
+            </a>
+
+            <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank" class="game">
+                <img src="{% static 'images/game5.png' %}" alt="Game 5">
+                <div class="game-details">
+                    <h2>Red Dead Redemption 2</h2>
+                    <p>2018</p>
+                </div>
+            </a>
+
+            <a href="https://en.bandainamcoent.eu/elden-ring" target="_blank" class="game">
+                <img src="{% static 'images/game6.png' %}" alt="Game 6">
+                <div class="game-details">
+                    <h2>Elden Ring</h2>
+                    <p>2021</p>
+                </div>
+            </a>
+
+            <a href="https://www.playstation.com/en-us/games/ghost-of-tsushima/" target="_blank" class="game">
+                <img src="{% static 'images/game7.png' %}" alt="Game 7">
+                <div class="game-details">
+                    <h2>Ghost of Tsushima</h2>
+                    <p>2021</p>
+                </div>
+            </a>
+
+            <a href="https://www.sekirothegame.com/" target="_blank" class="game">
+                <img src="{% static 'images/game8.png' %}" alt="Game 8">
+                <div class="game-details">
+                    <h2>Sekiro: Shadows Die Twice</h2>
+                    <p>2019</p>
+                </div>
+            </a>
+
+            <a href="https://www.nomanssky.com/" target="_blank" class="game">
+                <img src="{% static 'images/game9.png' %}" alt="Game 9">
+                <div class="game-details">
+                    <h2>No Man's Sky</h2>
+                    <p>2016</p>
+                </div>
+            </a>
+
+            <a href="https://www.ubisoft.com/en-us/game/assassins-creed/brotherhood" target="_blank" class="game">
+                <img src="{% static 'images/game10.png' %}" alt="Game 10">
+                <div class="game-details">
+                    <h2>Assassin's Creed Brotherhood</h2>
+                    <p>2010</p>
+                </div>
+            </a>
+
+            <a href="https://store.steampowered.com/app/1088850/Marvels_Guardians_of_the_Galaxy/" target="_blank" class="game">
+                <img src="{% static 'images/game11.jpg' %}" alt="Game 11">
+                <div class="game-details">
+                    <h2>Marvel's Guardians of the Galaxy</h2>
+                    <p>2021</p>
+                </div>
+            </a>
+
+            <a href="https://baldursgate3.game/" target="_blank" class="game">
+                <img src="{% static 'images/game12.png' %}" alt="Game 12">
+                <div class="game-details">
+                    <h2>Baldur's Gate III</h2>
+                    <p>2023</p>
+                </div>
+            </a>
+
+        </div>
+    </main>
+</body>
+</html>

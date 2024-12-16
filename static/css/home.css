@@ -1,0 +1,62 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+header {
+    background-color: #0c2536;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #276791;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url('../images/home.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+#welcome {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 60%; 
+}
+
+#welcome h1 {
+    font-size: 3em;
+}
+
+#welcome p {
+    font-size: 1.5em;
+}

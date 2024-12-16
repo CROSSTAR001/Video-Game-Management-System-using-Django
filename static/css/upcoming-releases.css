@@ -1,0 +1,91 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c2536;
+    color: white;
+    background-image: url('../images/releases.jpg'); 
+    background-size: cover;             /* Ensures the image covers the screen */
+    background-position: center center; /* Centers the image vertically and horizontally */
+    background-repeat: no-repeat;       /* Prevents tiling */
+    background-attachment: fixed;       /* Fixes the background in place while scrolling */
+}
+
+/* Header Styles */
+header {
+    background-color: #0c2536;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #276791;
+    border-radius: 5px;
+}
+
+/* Main Container */
+.releases-container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Table Styles */
+.releases-table {
+    width: 70%; 
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #0c2536c5; 
+}
+
+.releases-table th,
+.releases-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #444;
+}
+
+.releases-table th {
+    background-color: #0c2536;
+    color: white;
+    font-weight: bold;
+}
+
+.releases-table td {
+    color: #ccc;
+}
+
+/* Link Styles in the Table */
+.releases-table td a {
+    color: white;              /* White color for the text */
+    text-decoration: none;     /* Remove underline */
+    font-weight: bold;         /* Make the text bold */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.releases-table td a:hover {
+    transform: scale(1.1);     /* Zoom in effect */
+    color: #ccc;               /* Slightly lighter color on hover */
+}
+
+/* Title Styling */
+h1 {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone - Game Systems</title>
+    <link rel="stylesheet" href="{% static 'css/game-systems.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'games_library' %}">Games Library</a></li>
+                <li><a href="{% url 'trending_games' %}">Trending Games</a></li>
+                <li><a href="{% url 'upcoming_releases' %}">Upcoming Releases</a></li>
+                <li><a href="{% url 'awards_top_games' %}">Awards & Top Games</a></li>
+                <li><a href="{% url 'gaming_news' %}">Gaming News</a></li>
+                <li><a href="{% url 'game_systems' %}">Game Systems</a></li>
+                <li><a href="{% url 'history_of_gaming' %}">History of Gaming</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="systems-container">
+        <h1>Game Systems</h1>
+
+        <div class="system-item">
+            <img src="{% static 'images/pc.avif' %}" alt="PC Gaming">
+            <div class="system-details">
+                <h2>PC Gaming</h2>
+                <p>PC gaming offers the best in terms of customization and performance, with the ability to build high-end rigs that can run the latest games at ultra settings. A variety of gaming peripherals and mods are also available.</p>
+                <a href="https://www.amazon.com/s?k=gaming+pc" target="_blank" class="buy-link">Buy Gaming PCs</a>
+            </div>
+        </div>
+
+        <div class="system-item">
+            <img src="{% static 'images/ps.jpg' %}" alt="PlayStation">
+            <div class="system-details">
+                <h2>PlayStation</h2>
+                <p>The PlayStation consoles have been home to some of the greatest games ever made. With exclusives like God of War and The Last of Us, PlayStation remains a top choice for many gamers.</p>
+                <a href="https://www.amazon.com/s?k=playstation+5" target="_blank" class="buy-link">Buy PlayStation 5</a>
+            </div>
+        </div>
+
+        <div class="system-item">
+            <img src="{% static 'images/xbox.jpg' %}" alt="Xbox">
+            <div class="system-details">
+                <h2>Xbox</h2>
+                <p>Microsoft's Xbox consoles offer great value with Xbox Game Pass, which gives players access to a vast library of games for a monthly fee. Xbox Series X is their most powerful console yet.</p>
+                <a href="https://www.amazon.com/s?k=xbox+series+x" target="_blank" class="buy-link">Buy Xbox Series X</a>
+            </div>
+        </div>
+
+        <div class="system-item">
+            <img src="{% static 'images/ns.jpg' %}" alt="Nintendo Switch">
+            <div class="system-details">
+                <h2>Nintendo Switch</h2>
+                <p>The Nintendo Switch is the ultimate hybrid console, allowing you to play at home or on the go. It boasts a unique lineup of family-friendly and first-party games like The Legend of Zelda and Super Mario.</p>
+                <a href="https://www.amazon.com/s?k=nintendo+switch" target="_blank" class="buy-link">Buy Nintendo Switch</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

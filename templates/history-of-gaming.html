@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Zone - History of Gaming</title>
+    <link rel="stylesheet" href="{% static 'css/history-of-gaming.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'games_library' %}">Games Library</a></li>
+                <li><a href="{% url 'trending_games' %}">Trending Games</a></li>
+                <li><a href="{% url 'upcoming_releases' %}">Upcoming Releases</a></li>
+                <li><a href="{% url 'awards_top_games' %}">Awards & Top Games</a></li>
+                <li><a href="{% url 'gaming_news' %}">Gaming News</a></li>
+                <li><a href="{% url 'game_systems' %}">Game Systems</a></li>
+                <li><a href="{% url 'history_of_gaming' %}">History of Gaming</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="history-container">
+        <h1>History of Gaming</h1>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h1.jpg' %}" alt="Magnavox Odyssey">
+            <div class="timeline-content">
+                <h2>1972: The Magnavox Odyssey</h2>
+                <p>The Magnavox Odyssey—the world’s first home gaming console—hit living rooms in 1972, selling 300,000 units.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h2.jpeg' %}" alt="Atari 2600">
+            <div class="timeline-content">
+                <h2>1977: Atari 2600</h2>
+                <p>The Atari 2600 brings variety to home gaming. Fan favorites like Space Invaders help push sales to 30 million units.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h3.jpg' %}" alt="Nintendo Famicom">
+            <div class="timeline-content">
+                <h2>1983: Nintendo Famicom</h2>
+                <p>Japan is introduced to the Family Computer. It’s renamed the Nintendo Entertainment System (NES) for release in the US in 1985.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h4.png' %}" alt="NES">
+            <div class="timeline-content">
+                <h2>1985: The Revival with Nintendo</h2>
+                <p>The release of the Nintendo Entertainment System (NES) in 1985 revitalized the gaming industry. With iconic games like Super Mario Bros., Nintendo laid the foundation for modern console gaming.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h5.jpeg' %}" alt="Game Boy">
+            <div class="timeline-content">
+                <h2>1989: Game Boy</h2>
+                <p>Mobile gaming goes mainstream with the release of the Nintendo Game Boy, selling 118 million units of the 8-bit handheld system.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h6.jpg' %}" alt="Sony PlayStation">
+            <div class="timeline-content">
+                <h2>1994: Sony PlayStation</h2>
+                <p>Engineered as a disc-based system, the Sony PlayStation rapidly gains momentum after its release in 1994, selling 125 million units worldwide.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h7.jpg' %}" alt="3D Revolution">
+            <div class="timeline-content">
+                <h2>1995: The 3D Revolution</h2>
+                <p>The mid-90s saw the rise of 3D gaming with the release of consoles like the Sony PlayStation and the Nintendo 64. Games like Final Fantasy VII and Super Mario 64 revolutionized gaming with 3D graphics.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h8.jpg' %}" alt="Xbox">
+            <div class="timeline-content">
+                <h2>2001: The Rise of Online Multiplayer</h2>
+                <p>The release of the Xbox in 2001 and the introduction of Xbox Live brought online multiplayer gaming to the forefront. Halo 2 became one of the first major online multiplayer games.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h9.jpg' %}" alt="Second Life">
+            <div class="timeline-content">
+                <h2>2003: Second Life</h2>
+                <p>Second Life revolutionizes 3D environments and virtual worlds. By 2013, in-game spending in virtual goods reaches $3.2 billion.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h10.jpg' %}" alt="World of Warcraft">
+            <div class="timeline-content">
+                <h2>2004: World of Warcraft</h2>
+                <p>World of Warcraft opens its virtual fantasy doors. At launch, the popular MMORPG has over 10 million subscribers. By 2012, it generates $10 billion in revenue.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h11.jpeg' %}" alt="iPhone">
+            <div class="timeline-content">
+                <h2>2007: Mobile Gaming Takes Off</h2>
+                <p>With the launch of the iPhone in 2007, mobile gaming exploded. Games like Angry Birds and Clash of Clans reached millions of players, making mobile gaming a massive industry.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h12.jpg' %}" alt="Kinect for Xbox 360">
+            <div class="timeline-content">
+                <h2>2010: Kinect for Xbox 360</h2>
+                <p>In response to Nintendo Wii’s motion-controlled games, Microsoft releases Kinect for Xbox 360, allowing players to use their bodies as motion controllers.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h13.jpg' %}" alt="Nintendo 3DS">
+            <div class="timeline-content">
+                <h2>2011: Nintendo 3DS</h2>
+                <p>At just 8.5 ounces, Nintendo’s 3DS is the first portable game system with masterful glasses-free 3D display.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <img src="{% static 'images/h14.png' %}" alt="Cloud Gaming">
+            <div class="timeline-content">
+                <h2>2020: The Age of Streaming and Cloud Gaming</h2>
+                <p>The rise of streaming platforms like Twitch, YouTube Gaming, and cloud gaming services such as Google Stadia and Xbox Cloud Gaming changed the way players engage with games.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
